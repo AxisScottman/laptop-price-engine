@@ -221,12 +221,12 @@ def range_bar(lo, fair, hi, quoted):
               + (f' &nbsp; <span style="color:#dc2626">■</span> {t("lg_quoted")}' if quoted > 0 else ""))
     st.markdown(f"""
 <div style="direction:ltr;margin:18px 6px 6px 6px">
-  <div style="position:relative;height:18px;background:#e2e8f0;border-radius:9px">
+  <div style="position:relative;height:18px;background:rgba(148,163,184,0.35);border-radius:9px">
     <div style="position:absolute;left:{pos(lo):.1f}%;width:{pos(hi)-pos(lo):.1f}%;height:18px;background:#93c5fd;border-radius:9px"></div>
     <div style="position:absolute;left:{pos(fair):.1f}%;top:-6px;width:4px;height:30px;background:#2563eb;border-radius:2px"></div>
     {q}
   </div>
-  <div style="display:flex;justify-content:space-between;font-size:13px;color:#475569;margin-top:6px">
+  <div style="display:flex;justify-content:space-between;font-size:13px;color:#94a3b8;margin-top:6px">
     <span>{vmin:,.0f}</span><span>{vmax:,.0f}</span></div>
 </div>
 <div style="text-align:center;font-size:14px;margin-bottom:8px">{legend}</div>""", unsafe_allow_html=True)
