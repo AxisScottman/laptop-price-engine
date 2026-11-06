@@ -30,7 +30,7 @@ ch = meta["choices"]
 
 # ------------------------------------------------------------------ language
 with st.sidebar:
-    lang_choice = st.radio("اللغة / Language", ["العربية", "English"], horizontal=True)
+    lang_choice = st.radio("اللغة / Language", ["العربية", "English"], index=1, horizontal=True)
 AR = lang_choice == "العربية"
 
 TXT = {
