@@ -1,0 +1,110 @@
+{
+  "choices": {
+    "Company": [
+      "Acer",
+      "Apple",
+      "Asus",
+      "Chuwi",
+      "Dell",
+      "Fujitsu",
+      "Google",
+      "HP",
+      "Huawei",
+      "LG",
+      "Lenovo",
+      "MSI",
+      "Mediacom",
+      "Microsoft",
+      "Razer",
+      "Samsung",
+      "Toshiba",
+      "Vero",
+      "Xiaomi"
+    ],
+    "TypeName": [
+      "2 in 1 Convertible",
+      "Gaming",
+      "Netbook",
+      "Notebook",
+      "Ultrabook",
+      "Workstation"
+    ],
+    "Cpu_brand": [
+      "AMD",
+      "Intel Core i3",
+      "Intel Core i5",
+      "Intel Core i7",
+      "Other",
+      "Other Intel"
+    ],
+    "Gpu_brand": [
+      "AMD",
+      "ARM",
+      "Intel",
+      "Nvidia"
+    ],
+    "OS_group": [
+      "Linux",
+      "Other / No OS",
+      "Windows",
+      "macOS"
+    ]
+  },
+  "ram": [
+    2.0,
+    4.0,
+    6.0,
+    8.0,
+    12.0,
+    16.0,
+    24.0,
+    32.0,
+    64.0
+  ],
+  "inches": [
+    10.1,
+    11.3,
+    11.6,
+    12.0,
+    12.3,
+    12.5,
+    13.0,
+    13.3,
+    13.5,
+    13.9,
+    14.0,
+    14.1,
+    15.0,
+    15.4,
+    15.6,
+    17.0,
+    17.3,
+    18.4
+  ],
+  "resolutions": [
+    "1920x1080",
+    "1366x768",
+    "3840x2160",
+    "3200x1800",
+    "2560x1440",
+    "1600x900",
+    "2560x1600",
+    "2304x1440",
+    "2256x1504",
+    "1920x1200",
+    "1440x900",
+    "2880x1800",
+    "2400x1600",
+    "2160x1440",
+    "2736x1824"
+  ],
+  "price_min": 9270.72,
+  "price_max": 324954.72,
+  "price_median": 52693.92,
+  "deal_low_ratio": 0.887,
+  "deal_high_ratio": 1.115,
+  "best_model": "Gradient Boosting",
+  "test_mae": 10996.413,
+  "test_r2": 0.769,
+  "median_pct_err": 11.5
+}

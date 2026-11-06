@@ -1,0 +1,170 @@
+{
+  "rows_raw": 1303,
+  "rows_after_dedup": 1274,
+  "top_corr": {
+    "Ram_GB": 0.74,
+    "SSD_GB": 0.67,
+    "PPI": 0.47,
+    "Cpu_GHz": 0.428,
+    "IPS": 0.25
+  },
+  "n_train": 1019,
+  "n_test": 255,
+  "cv_untuned": {
+    "Baseline (mean)": {
+      "CV MAE": 27817.63,
+      "CV RMSE": 37567.008,
+      "CV R2": -0.077
+    },
+    "Ridge": {
+      "CV MAE": 12785.096,
+      "CV RMSE": 20204.503,
+      "CV R2": 0.688
+    },
+    "Random Forest": {
+      "CV MAE": 9919.522,
+      "CV RMSE": 15819.548,
+      "CV R2": 0.809
+    },
+    "Gradient Boosting": {
+      "CV MAE": 10228.141,
+      "CV RMSE": 16003.289,
+      "CV R2": 0.805
+    }
+  },
+  "tuned_cv_mae": {
+    "Ridge": 12674.5,
+    "Random Forest": 9852.4,
+    "Gradient Boosting": 9286.9
+  },
+  "best_params": {
+    "Ridge": {
+      "alpha": 0.01
+    },
+    "Random Forest": {
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_features": 0.3,
+      "max_depth": 15
+    },
+    "Gradient Boosting": {
+      "subsample": 0.7,
+      "n_estimators": 500,
+      "min_samples_leaf": 3,
+      "max_depth": 4,
+      "learning_rate": 0.05
+    }
+  },
+  "test": {
+    "Baseline (mean)": {
+      "MAE": 28663.142,
+      "RMSE": 43464.487,
+      "R2": -0.102
+    },
+    "Ridge": {
+      "MAE": 14093.762,
+      "RMSE": 28207.059,
+      "R2": 0.536
+    },
+    "Random Forest": {
+      "MAE": 11173.76,
+      "RMSE": 20641.291,
+      "R2": 0.751
+    },
+    "Gradient Boosting": {
+      "MAE": 10996.413,
+      "RMSE": 19894.914,
+      "R2": 0.769
+    }
+  },
+  "best_model": "Gradient Boosting",
+  "median_pct_err": 11.5,
+  "within_20pct": 73.3,
+  "error_by_band": {
+    "Q1 cheapest": {
+      "n": 64,
+      "MAE": 3001.9,
+      "median_pct_err": 9.3
+    },
+    "Q2": {
+      "n": 64,
+      "MAE": 5386.2,
+      "median_pct_err": 8.3
+    },
+    "Q3": {
+      "n": 63,
+      "MAE": 11002.4,
+      "median_pct_err": 11.9
+    },
+    "Q4 most expensive": {
+      "n": 64,
+      "MAE": 24595.3,
+      "median_pct_err": 16.4
+    }
+  },
+  "top_features": [
+    "Ram_GB",
+    "Cpu_GHz",
+    "SSD_GB",
+    "Cpu_brand",
+    "Weight_kg"
+  ],
+  "spearman_rule": 0.734,
+  "spearman_model": 0.938,
+  "silhouette": {
+    "3": 0.24,
+    "4": 0.24,
+    "5": 0.249,
+    "6": 0.264
+  },
+  "k_tiers": 4,
+  "tier_profile": {
+    "Tier 1 \u00b7 Entry": {
+      "n": 278,
+      "median_price": 30076.56,
+      "RAM": 4.0,
+      "GHz": 2.3,
+      "SSD": 0.0,
+      "HDD": 500.0,
+      "PPI": 111.94,
+      "kg": 2.04,
+      "dedicated_GPU": 0.0
+    },
+    "Tier 2 \u00b7 Mainstream": {
+      "n": 295,
+      "median_price": 44275.68,
+      "RAM": 8.0,
+      "GHz": 2.5,
+      "SSD": 128.0,
+      "HDD": 1000.0,
+      "PPI": 141.21,
+      "kg": 2.2,
+      "dedicated_GPU": 1.0
+    },
+    "Tier 3 \u00b7 Slim Premium": {
+      "n": 320,
+      "median_price": 74272.05,
+      "RAM": 8.0,
+      "GHz": 2.5,
+      "SSD": 256.0,
+      "HDD": 0.0,
+      "PPI": 165.63,
+      "kg": 1.36,
+      "dedicated_GPU": 0.07
+    },
+    "Tier 4 \u00b7 High-Performance": {
+      "n": 126,
+      "median_price": 102004.56,
+      "RAM": 16.0,
+      "GHz": 2.8,
+      "SSD": 256.0,
+      "HDD": 1000.0,
+      "PPI": 141.21,
+      "kg": 2.72,
+      "dedicated_GPU": 1.0
+    }
+  },
+  "pca_var_2d": 0.678,
+  "deal_low_ratio": 0.887,
+  "deal_high_ratio": 1.115
+}
